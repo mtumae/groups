@@ -3,11 +3,62 @@ html{
     font-style: normal;
 }
 
-
-
 .container{
     margin: 10px;
     padding: 20px;
-    box-shadow: 1px 1px 4px gray;
+    box-shadow: 0px 1px 4px gray;
     border-radius: 10px;
+}
+
+.line{
+    width: 100%;
+    border: 1px solid black;
+    animation-name: extend;
+    animation-duration: 2s;
+}
+
+.box-full{
+    margin: 20px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+button{
+    padding: 10px;
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.nav>p{
+    cursor: pointer;
+}
+
+
+/* Animations */
+@keyframes extend {
+        from{width: 0%;}
+        to{width: 100%;}
 }
