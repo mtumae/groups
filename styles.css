@@ -10,6 +10,21 @@ html{
     border-radius: 10px;
 }
 
+.search-bar{
+    border-radius: 5px;
+    justify-items: center;
+    margin: 50px;
+   
+}
+
+input{
+    border-radius: 10px;
+    border:none;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
 .line{
     width: 100%;
     border: 1px solid black;
@@ -25,25 +40,37 @@ html{
     display: flex;
     border-radius: 4px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
+    cursor: pointer;
+    
 }
 
 button{
-    padding: 10px;
-    font-size: large;
+    padding: 8px;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    border: 1px solid #959292;
     color: black;
     cursor: pointer;
-    width: 100px;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+
 }
 
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 20px;
+}
+p{
+    color:#777474;
+}
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
 .nav{
@@ -62,3 +89,24 @@ button{
         from{width: 0%;}
         to{width: 100%;}
 }
+
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+button:hover{
+    background-color: #cacaca;
+}
+
+
+
+
+
+/* background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
