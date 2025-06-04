@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+       
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h2 {
+        text-align: center;
+        color: #555;
+        font-family: 'Arial', sans-serif;
+    }
+    h6 {
+        text-align: center;
+        color: #007bff;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 14px;
+        
+        
+    }
+    
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        height:auto;
+        background-image: url('login-background.jpeg');
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    
+    button:hover {
+        background-color: #218838;
+    }
+</style>
+<body>
+    <div>
+    <form action="dashboard.html" method="post">
+        <h1>StudyCircle</h1>
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+
+        <h6>Sign Up</h6>
+    </form>
+    
+</body>
+</html>
