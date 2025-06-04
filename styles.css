@@ -51,10 +51,16 @@ button{
     border: 1px solid #959292;
     color: black;
     cursor: pointer;
-    width: auto;
-    height: auto;
     border-radius: 5px;
+    align-items: center;
 
+}
+
+.nowrap-box{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
 }
 
 .flex-box{
@@ -75,8 +81,10 @@ a{
 
 .nav{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+    justify-content: space-between;
 }
 
 .nav>p{
