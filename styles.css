@@ -83,6 +83,7 @@ p{
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .nav{
@@ -100,19 +101,61 @@ a{
 
 .banner{
     width: 100%;
-    height: 60%;
+    margin-bottom: 100px;
+    height: 20%;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     background-color: aquamarine;
     text-align: center;
+    padding: 10px;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    animation-name: extend-height;
+    animation-duration: 2s;
 }
 
+table{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+td, th{
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+
+tr:hover{
+    background-color: #f0efef;
+    cursor: pointer;
+}
+
+
+.badge{
+    border-radius: 100px;
+    background-color: yellow;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+    margin-bottom: -200px;
+ 
+
+}
 
 /* Animations */
 @keyframes extend {
         from{width: 0%;}
         to{width: 100%;}
+}
+
+@keyframes extend-height {
+        from{height: 0%;}
+        to{height: 20%;}
 }
 
 
@@ -152,6 +195,8 @@ button:hover{
 
 .chat-box{
     overflow-y: scroll;
-    display: grid;
+    overflow-x: hidden;
     height: 60vh;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0; 
 }
