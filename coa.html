@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study group project</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav">
-        <h1>Study Group Project</h1>
-        <div class="nav">
-            <a target="_blank" href="about.html">About</a>
-            <a target="_blank" href="contact.html">Contact</a>
+
+    <div class="grid-group">
+        <div class="nav" style="border: 1px solid #e0e0e0; column-span:2; border-radius: 5px; padding-left: 10px; padding-right: 10px;">
+            <h1>Computer Organization and Architecture</h1>
+
+            <div class="flex-box">
+                <button style="border: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-plus-icon lucide-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
+                </button>
+                <button style="background-color: red; color: white; border: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-minus-icon lucide-circle-minus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="chat-box" style="margin: 0px; grid-column-start: 1; column-span: 2; border: 1px solid #e0e0e0;">
+            <p>No</p>
+
+            <div class="flex-box">
+                <input style="width: 60%;" placeholder="Enter your message..."/>
+                <input  type="file" />
+            </div>
+            
         </div>
     </div>
-    <div class="line"></div>
-    
-    
-
 </body>
 </html>
