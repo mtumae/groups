@@ -216,13 +216,8 @@ button:hover{
 
 .chat-box{
     overflow-y: scroll;
-<<<<<<< HEAD
-    display: grid;
-}
-=======
     overflow-x: hidden;
     height: 60vh;
     border-radius: 4px;
     border: 1px solid #e0e0e0; 
 }
->>>>>>> 41febc2267cc3e027e507746760e1f2c2ecc50ed
